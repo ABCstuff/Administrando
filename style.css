@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #003333;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.descripcion {
+  padding: 2rem;
+  background-color: white;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion h2 {
+  margin-bottom: 1rem;
+  color: #003333;
+  font-size: 1.6rem;
+}
+
+.volumenes {
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.volumenes h2 {
+  margin-bottom: 1rem;
+  color: #003333;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.volumen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.volumen {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.volumen:hover {
+  transform: scale(1.02);
+}
+
+.volumen img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.volumen .proximamente {
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #003333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #a7e4c1;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*  Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .descripcion,
+  .volumenes {
+    padding: 1rem;
+  }
+
+  .volumen-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .volumen .proximamente {
+    height: 200px;
+    font-size: 1rem;
+  }
+}
