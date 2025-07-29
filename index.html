@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+  function togglePreview() {
+    const preview = document.getElementById('volumen1-preview');
+    preview.classList.toggle('visible');
+    preview.classList.toggle('oculto');
+  }
+    </script>
     <header>
         <h1>Revista Administrando</h1>
         <p class="subtitulo">Una visión científica de la administración</p>
@@ -22,9 +29,19 @@
     <section class="volumenes">
         <h2>Volúmenes publicados</h2>
         <div class="volumen-grid">
-            <div class="volumen">
-                <img src="volumen1.jpg" alt="Volumen 1">
-                <p><strong>Volumen 1</strong><br>Julio 2025</p>
+<section id="volumen1-preview" class="preview oculto">
+  <h3>Vista previa del Volumen 1</h3>
+  <div class="preview-grid">
+    <img src="contenido1.jpg" alt="Página 1">
+    <img src="contenido2.jpg" alt="Página 2">
+    <img src="contenido3.jpg" alt="Página 3">
+    <img src="contenido4.jpg" alt="Página 4">
+    <img src="contenido5.jpg" alt="Página 5">
+  </div>
+</section>
+            <div class="volumen" onclick="togglePreview()">
+  <img src="volumen1.jpg" alt="Volumen 1">
+  <p><strong>Volumen 1</strong><br>Julio 2025</p>
             </div>
             <div class="volumen">
                 <div class="proximamente">Por publicar</div>
