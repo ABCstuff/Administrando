@@ -1,69 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revista Administrando</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <script>
-  function togglePreview() {
-    const preview = document.getElementById('volumen1-preview');
-    preview.classList.toggle('visible');
-    preview.classList.toggle('oculto');
-  }
-    </script>
-    <header>
-        <h1>Revista Administrando</h1>
-        <p class="subtitulo">Una visión científica de la administración</p>
-    </header>
+<!DOCTYPE html>  <html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Revista Administrando</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+    <header>  
+        <h1>Revista Administrando</h1>  
+        <p class="subtitulo">Una visión científica de la administración</p>  
+    </header>  <section class="descripcion">  
+    <h2>¿Qué es "Administrando"?</h2>  
+    <p>  
+        "Administrando" es una revista científica orientada a la difusión de conocimientos en el campo de la administración pública y privada. Su objetivo es impulsar el pensamiento estratégico, promover investigaciones recientes y brindar herramientas teóricas y prácticas a profesionales, estudiantes y académicos.  
+    </p>  
+</section>  
 
-    <section class="descripcion">
-        <h2>¿Qué es "Administrando"?</h2>
-        <p>
-            "Administrando" es una revista científica orientada a la difusión de conocimientos en el campo de la administración pública y privada. Su objetivo es impulsar el pensamiento estratégico, promover investigaciones recientes y brindar herramientas teóricas y prácticas a profesionales, estudiantes y académicos.
-        </p>
-    </section>
+<section class="volumenes">  
+    <h2>Volúmenes publicados</h2>  
+    <div class="volumen-grid">  
+        <div class="volumen">  
+            <img src="volumen1.jpg" alt="Volumen 1">  
+            <p><strong>Volumen 1</strong><br>Julio 2025</p>  
+        </div>  
+        <div class="volumen">  
+            <div class="proximamente">Por publicar</div>  
+            <p><strong>Volumen 2</strong></p>  
+        </div>  
+        <div class="volumen">  
+            <div class="proximamente">Por publicar</div>  
+            <p><strong>Volumen 3</strong></p>  
+        </div>  
+        <div class="volumen">  
+            <div class="proximamente">Por publicar</div>  
+            <p><strong>Volumen 4</strong></p>  
+        </div>  
+        <div class="volumen">  
+            <div class="proximamente">Por publicar</div>  
+            <p><strong>Volumen 5</strong></p>  
+        </div>  
+    </div>  
+</section>  
 
-    <section class="volumenes">
-        <h2>Volúmenes publicados</h2>
-        <div class="volumen-grid">
-<section id="volumen1-preview" class="preview oculto">
-  <h3>Vista previa del Volumen 1</h3>
-  <div class="preview-grid">
-    <img src="contenido1.jpg" alt="Página 1">
-    <img src="contenido2.jpg" alt="Página 2">
-    <img src="contenido3.jpg" alt="Página 3">
-    <img src="contenido4.jpg" alt="Página 4">
-    <img src="contenido5.jpg" alt="Página 5">
-  </div>
-</section>
-            <div class="volumen" onclick="togglePreview()">
-  <img src="volumen1.jpg" alt="Volumen 1">
-  <p><strong>Volumen 1</strong><br>Julio 2025</p>
-            </div>
-            <div class="volumen">
-                <div class="proximamente">Por publicar</div>
-                <p><strong>Volumen 2</strong></p>
-            </div>
-            <div class="volumen">
-                <div class="proximamente">Por publicar</div>
-                <p><strong>Volumen 3</strong></p>
-            </div>
-            <div class="volumen">
-                <div class="proximamente">Por publicar</div>
-                <p><strong>Volumen 4</strong></p>
-            </div>
-            <div class="volumen">
-                <div class="proximamente">Por publicar</div>
-                <p><strong>Volumen 5</strong></p>
-            </div>
-        </div>
-    </section>
+<footer>  
+    <p>Contacto: +58 424 3617070 | Instagram: <a href="https://instagram.com/administrandooficial" target="_blank">@administrandooficial</a></p>  
+</footer>
 
-    <footer>
-        <p>Contacto: +58 424 3617070 | Instagram: <a href="https://instagram.com/administrandooficial" target="_blank">@administrandooficial</a></p>
-    </footer>
-</body>
+</body>  
 </html>
